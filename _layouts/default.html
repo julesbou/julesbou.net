@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include header.html %}
+    <section class="{{ page.section }}">
+      {{ content }}
+    </section>
+    {% include footer.html %}
+  </body>
+</html>
+

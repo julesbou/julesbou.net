@@ -1,0 +1,18 @@
+---
+layout: default
+title: Jules Boussekeyt
+section: posts
+crumb: Blog
+---
+
+{% for post in site.posts %}
+  {% if post.visible != false %}
+    <article class="posts__item">
+      <hgroup>
+        <h2><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+      </hgroup>
+      <p>{{ post.content | strip_html | truncate: 200 }}</p>
+    </article>
+  {% endif %}
+{% endfor %}

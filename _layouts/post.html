@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include header.html %}
+    <section class="post __tag-{{ page.tags[0] }}">
+      <header>
+        <hgroup>
+          <h1>{{ page.title }}</h1>
+          <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
+        </hgroup>
+      </header>
+      <article class="article">
+        {{ content }}
+      </article>
+      <footer>
+        <strong>Thanks for reading,</strong>
+        If you found a typo, please 
+        <a href="http://github.com/julesbou/blog/edit/gh-pages/_posts/{{ page.date | date: '%Y-%m-%d' }}-{{ page.url | split: '/' | last | replace: '.html', '' }}.md">fork and edit this post</a>.
+      </article>
+    </section>
+    {% include footer.html %}
+  </div>
+  </body>
+</html>
+

@@ -1,0 +1,86 @@
+.header {
+  margin-bottom: 36px;
+}
+
+.header h1 {
+  text-indent: -9999px;
+  height: 90px;
+  color: #4d9c96;
+  font-family: monospace;
+  display: inline-block;
+
+  &:before {
+    cursor: default;
+    left: 20px;
+    line-height: 1em;
+    position: absolute;
+    text-indent: 0;
+    top: 1em;
+    white-space: pre;
+    content: "   _       _           \A   (_)     | |          \A    _ _   _| | ___ ___ \A   | | | | | |/ _ \/ __|\A   | | |_| | |  __/\__ \\\A   | |\___,_|_|\________/\A  _/ |                  \A|__/                   ";
+  }
+}
+
+.header p {
+  margin: 0;
+  color: #b58900;
+
+  a {
+    color: #b58900;
+    text-decoration: underline;
+  }
+}
+
+
+@border-height: 12px;
+@border-width: 10px;
+
+.header .header__breadcrumbs {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  list-style-type: none;
+
+  li {
+    float: left;
+
+    &:first-child a {
+      padding-left: 10px;
+    }
+
+    &:nth-child(1) a       { background:        #2B8BD2; }
+    &:nth-child(1) a:after { border-left-color: #2B8BD2; }
+
+    &:nth-child(2) a       { background:        lighten(#2B8BD2, 12%); }
+    &:nth-child(2) a:after { border-left-color: lighten(#2B8BD2, 12%); }
+
+    &:nth-child(3) a       { background:        lighten(#2B8BD2, 24%); }
+    &:nth-child(3) a:after { border-left-color: lighten(#2B8BD2, 24%); }
+
+    a {
+      color: #10353f;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      height: @border-height * 2;
+      padding: 0 16px 0 20px;
+      position: relative;
+      float: left;
+
+      &:after { 
+        content: " "; 
+        display: block; 
+        width: 0; 
+        height: 0;
+        border-top: @border-height solid transparent;           /* Go big on the size, and let overflow hide */
+        border-bottom: @border-height solid transparent;
+        border-left: @border-width solid hsla(34,85%,35%,1);
+        position: absolute;
+        top: 50%;
+        margin-top: -@border-height; 
+        left: 100%;
+        z-index: 2; 
+      }
+    }
+  }
+}

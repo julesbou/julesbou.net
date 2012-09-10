@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS3 Mobile Application Layout</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="mobile-layout.css">
+  </head>
+  <body>
+    <h1>CSS3 Mobile Application Layout</h1>
+    <a href="/2013/mobile-application-layout-css3.html">« back to post</a>
+    <div class="wrapper">
+      <section id="section-01" class="level-0">
+        <h4>Welcome (level 0)</h4>
+        <ul class="items">
+          <li><a href="#section-11">Go to level 1</a></li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </section>
+      <section id="section-11" class="level-1">
+        <h4><a href="#section-01">&larr; back</a> - Welcome (level 1)</h4>
+        <ul class="items">
+          <li><a href="#section-21">Go to level 2</a></li>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </section>
+      <section id="section-21" class="level-2">
+        <h4><a href="#section-11">&larr; back</a> - Welcome (level 2)</h4> 
+        <ul class="items">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </section>
+    </div>
+    <script src="mobile-layout.js"></script>
+  </body>
+</html>

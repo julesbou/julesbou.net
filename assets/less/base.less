@@ -1,0 +1,35 @@
+html {
+  height: 100%;
+}
+
+body {
+  font: 100% Monaco,Consolas,"Lucida Console",monospace;
+  color: #839496;
+  background: #002b36;
+  padding: 24px;
+}
+
+.container, h1, h2, h3, p, ol, ul, header, footer, hgroup, figure, hr {
+  box-sizing: border-box;
+  max-width: 620px;
+  font-size: 1em;
+  line-height: 1.5em;
+
+  &.__l {
+    max-width: 680px;
+  }
+}
+
+a, a:visited {
+  color: @link-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: @link-hover-color;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
