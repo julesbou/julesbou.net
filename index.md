@@ -23,6 +23,7 @@ Here's a list of companies i've been working for:
 - [Sparkcentral](http://www.sparkcentral.com/)
 - [Everlution](http://www.everlution.com/)
 - [Wisembly](http://wisembly.com/fr/)
+- [SensioLabs](http://sensiolabs.com/)
 
 ##elsewhere
 - [Twitter](https://twitter.com/julesbou)
