@@ -30,6 +30,3 @@ Here's a list of companies i've been working for:
 
 ##(pet) projects
 - [Conway's game of life](/projects/game-of-life)
-
-##in the mean time ..
-.. you can read my [blog](/posts.html).
