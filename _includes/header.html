@@ -1,17 +1,8 @@
 <header class="header">
-  <a href="/"><h1>Jules</h1></a>
-  {% if page.subtitle %}
-    <p>{{ page.subtitle }}</p>
-  {% elsif page.layout == 'post' %}
-    <ul class="header__breadcrumbs">
-      <li><a href="/">Home</a></li>
-      <li><a href="/posts.html">Blog</a></li>
-      <li><a>{{ page.title }}</a></li>
-    </ul>
-  {% elsif page.crumb %}
-    <ul class="header__breadcrumbs">
-      <li><a href="/">Home</a></li>
-      <li><a>{{ page.crumb }}</a></li>
-    </ul>
-  {% endif %}
+  <div class="__rotated">
+    <div class="header-geometry __header">&nbsp;</div>
+    <h1>Jules Boussekeyt</h1>
+    <div class="header-geometry __aside">&nbsp;</div>
+    <!--<h2 class="__blog">Blog</h2>-->
+  </div>
 </header>

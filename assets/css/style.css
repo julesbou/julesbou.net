@@ -17,8 +17,15 @@ html {
 body {
   font: 100% Monaco, Consolas, "Lucida Console", monospace;
   color: #839496;
-  background: #002b36;
-  padding: 24px;
+}
+.root {
+  overflow: hidden;
+}
+.main {
+  overflow: auto;
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 .container,
 h1,
@@ -493,10 +500,84 @@ img {
 }
 .header {
   margin-bottom: 36px;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 610px;
+  min-width: 296px;
+  width: 100%;
+  position: relative;
+  line-height: 170%;
+  font-size: 17px;
+  margin-bottom: 85px;
+}
+.header .__rotated {
+  -webkit-transform-origin: 50% 0%;
+  transform: rotate(-16.4deg);
+  -moz-transform: rotate(-16.4deg);
+  -ms-transform: rotate(-16.4deg);
+  -webkit-transform: rotate(-16.4deg);
+  -o-transform: rotate(-16.4deg);
+  top: 100px;
+  right: calc(-100% + 610px);
+  right: -moz-calc(-100% + 610px);
+  right: -webkit-calc(-100% + 610px);
+  position: relative;
+  width: 600px;
+  margin-bottom: 200px;
+  z-index: -1;
+}
+.header-geometry.__header {
+  background: #ffb900;
+  width: 2750px;
+  height: 500px;
+  right: 0px;
+  top: -500px;
+  position: absolute;
+  display: inline-block;
+}
+.header-geometry.__aside {
+  color: #303841;
+  width: 700px;
+  height: 2700px;
+  background: #002b36;
+  right: -700px;
+  top: 0px;
+  position: absolute;
+  z-index: -1;
+}
+.header-geometry.__footer {
+  background: #ffb900;
+  width: 2750px;
+  height: 500px;
+  right: 0px;
+  top: -500px;
+  position: absolute;
+  display: inline-block;
+}
+.header-geometry .__blog {
+  text-indent: -9999px;
+  height: 120px;
+  color: #4d9c96;
+  font-family: monospace;
+  display: inline-block;
+}
+.header-geometry .__blog:before {
+  cursor: default;
+  left: 20px;
+  line-height: 1em;
+  position: absolute;
+  text-indent: 0;
+  top: 1em;
+  white-space: pre;
+  content: " _     _             \A | |   | |            \A | |__ | | ___   __ _ \A | '_ \\| |/ _ \\ / _` |\A | |_) | | (_) | (_| |\A |_.__/|_|\\___/ \\__, |\A                 __/ |\A                |___/ \A";
+  content: "   __       _     _              \A   / /      | |   | |             \A  / /_____  | |__ | | ___   __ _  \A ‹   _____| | '_ \\| |/ _ \\ / _` | \A  \\ \\       | |_) | | (_) | (_| | \A   \\_\\      |_.__/|_|\\___/ \\__, | \A                            __/ | \A                           |___/  \A";
+  font-size: 10px;
+  margin-top: 30px;
+  color: #888;
 }
 .header h1 {
   text-indent: -9999px;
-  height: 90px;
+  height: 120px;
   color: #4d9c96;
   font-family: monospace;
   display: inline-block;
@@ -509,15 +590,8 @@ img {
   text-indent: 0;
   top: 1em;
   white-space: pre;
-  content: "   _       _           \A   (_)     | |          \A    _ _   _| | ___ ___ \A   | | | | | |/ _ \/ __|\A   | | |_| | |  __/\__ \\\A   | |\___,_|_|\________/\A  _/ |                  \A|__/                   ";
-}
-.header p {
-  margin: 0;
-  color: #b58900;
-}
-.header p a {
-  color: #b58900;
-  text-decoration: underline;
+  margin-left: -200px;
+  content: "   _       _            _                              _              _   \A   (_)     | |          | |                            | |            | |  \A    _ _   _| | ___ ___  | |__   ___  _   _ ___ ___  ___| | _____ _   _| |_ \A   | | | | | |/ _ / __| |  _ \\ / _ \\| | | / __/ __|/ _ \\ |/ / _ \\ | | | __|\A   | | |_| | |  __/__ \\ | |_) | (_) | |_| \\__ /__ \\  __/   |  __/ |_| | |_ \A   | |\\__,_|_|________/ |____/ \\___/ \\__,_|___/___/\\___|_|\\_\\___|\\__, |___|\A  _/ |                                                             _/ |    \A |__/                                                             |___/    \A";
 }
 .header .header__breadcrumbs {
   margin: 0;
@@ -724,9 +798,6 @@ img {
   color: #dc322f !important;
   font-weight: bold            !important;
 }
-.home {
-  overflow: auto;
-}
 .home img {
   border-radius: 2px;
   float: right;
@@ -747,7 +818,6 @@ img {
   list-style-type: none;
 }
 .home ul li:not(:last-child):after {
-  color: #586e75;
   content: '•';
 }
 .home ul li a {
