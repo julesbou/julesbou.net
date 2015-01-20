@@ -1,7 +1,0 @@
-safe: true
-pygments: true
-permalink: /:year/:title.html
-markdown: redcarpet
-
-# custom config
-google_analytics: UA-19244753-1
