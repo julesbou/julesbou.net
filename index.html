@@ -32,8 +32,8 @@
         <h2>contact</h2>
 
         <p>
-          If you want to work with me, you can mail me on
-          <a href="mailto:jules.boussekeyt@gmail.com">jules.boussekeyt@gmail.com</a>.
+          If you want to work with me,<br> you can mail me on
+          <a class="liame"></a>
         </p>
 
         <h2>previously</h2>
@@ -56,6 +56,17 @@
         </ul>
 
       </section>
+
+      <script>
+        window.onload = function() {
+          var liame = ['jules', 'bous@gmail', 'com'].join('.')
+          var liameEl = document.querySelector('.liame')
+
+          liameEl.innerText = liame
+          liameEl.href = 'mailto:' + liame
+        }
+      </script>
+
       <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-19244753-1']);
