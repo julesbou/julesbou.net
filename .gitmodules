@@ -1,3 +1,0 @@
-[submodule "projects/game-of-life"]
-	path = projects/game-of-life
-	url = https://github.com/julesbou/game-of-life.git
