@@ -1,18 +1,22 @@
-html {
+html,
+body {
   height: 100%;
 }
 body {
-  font: 100% Monaco, Consolas, "Lucida Console", monospace;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  font-family: 'Exo 2', sans-serif;
   margin: 0;
-  color: #839496;
+  color: #777;
 }
 .root {
   overflow: hidden;
+  min-height: 100%;
 }
-.main {
+main {
   overflow: auto;
   width: 600px;
-  margin: 0 auto;
+  margin: 250px auto 0;
   margin-bottom: 40px;
 }
 h1,
@@ -29,15 +33,12 @@ footer {
 }
 a,
 a:visited {
-  color: #4183C4;
+  color: #008cdd;
   text-decoration: none;
 }
 a:hover {
-  color: #4183C4;
+  color: #008cdd;
   text-decoration: underline;
-}
-img {
-  max-width: 100%;
 }
 @media (min-width: 701px) {
   .header {
@@ -52,92 +53,92 @@ img {
     font-size: 17px;
     margin-bottom: 85px;
   }
-  .header .__rotated {
+  .header .header-rotated {
     -webkit-transform: rotate(-16.4deg);
-        -ms-transform: rotate(-16.4deg);
             transform: rotate(-16.4deg);
-    top: 100px;
+    top: 120px;
     right: calc(-100% + 610px);
+    right: -webkit-calc(-100% + 610px);
     position: relative;
     width: 600px;
-    margin-bottom: 200px;
+    margin-bottom: 0;
     z-index: -1;
   }
-  .header-geometry.__header {
+  .header-geometry-top {
     background: #ffb900;
     width: 2750px;
     height: 500px;
-    right: 0px;
+    right: 0;
     top: -500px;
     position: absolute;
     display: inline-block;
   }
-  .header-geometry.__aside {
+  .header-geometry-right {
     color: #303841;
-    width: 700px;
+    width: 1000px;
     height: 2700px;
     background: #002b36;
-    right: -700px;
+    right: -1000px;
     top: 0px;
     position: absolute;
     z-index: -1;
   }
-  .header h1 {
-    text-indent: -9999px;
-    height: 120px;
-    color: #4d9c96;
-    font-family: monospace;
-    display: inline-block;
-  }
-  .header h1:before {
-    cursor: default;
-    left: 20px;
-    line-height: 1em;
-    position: absolute;
-    text-indent: 0;
-    top: 1em;
-    white-space: pre;
-    margin-left: -200px;
-    content: "   _       _            _                              _              _   \A   (_)     | |          | |                            | |            | |  \A    _ _   _| | ___ ___  | |__   ___  _   _ ___ ___  ___| | _____ _   _| |_ \A   | | | | | |/ _ / __| |  _ \\ / _ \\| | | / __/ __|/ _ \\ |/ / _ \\ | | | __|\A   | | |_| | |  __/__ \\ | |_) | (_) | |_| \\__ /__ \\  __/   |  __/ |_| | |_ \A   | |\\__,_|_|________/ |____/ \\___/ \\__,_|___/___/\\___|_|\\_\\___|\\__, |___|\A  _/ |                                                             _/ |    \A |__/                                                             |___/    \A";
-  }
 }
-.home img {
+img {
   border-radius: 2px;
   float: right;
-  margin: 0 0 12px 12px;
+  margin: 0;
+  padding-left: 12px;
+  max-width: 25%;
 }
-.home p {
+p {
   margin: 0 0 12px 0;
+  word-spacing: 2px;
 }
-.home h2 {
+h2 {
   color: #c06a0b;
   margin-top: 24px;
+  font-style: italic;
+  font-size: 18px;
 }
-.home ul {
+ul {
   padding: 0;
+  max-width: 80%;
 }
-.home ul li {
+ul.vertical li {
+  list-style-type: none;
+}
+ul.vertical li:before {
+  content: '•';
+}
+ul.vertical li a {
+  margin-left: 8px;
+}
+ul.horizontal li {
   display: inline-block;
   list-style-type: none;
 }
-.home ul li:not(:last-child):after {
+ul.horizontal li:not(:last-child):after {
   content: '•';
+  margin-right: 4px;
 }
-.home ul li a {
+ul.horizontal li a {
   margin-right: 8px;
 }
 @media (max-width: 700px) {
   body {
     padding: 20px;
+    box-sizing: border-box;
   }
-  .main {
+  main {
     width: 100%;
+    margin-top: 0;
   }
-  .main ul li {
+  main ul li {
     list-style-type: disc;
     display: block;
   }
-  .main ul li:not(:last-child):after {
+  main ul li:not(:last-child):after {
     content: '';
   }
   .picture-me {
@@ -147,7 +148,21 @@ img {
     color: #4d9c96;
     font-size: 150%;
   }
-  .header-geometry {
+  .header-geometry-top,
+  .header-geometry-right {
     display: none;
   }
 }
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Exo 2 Medium'), local('Exo2-Medium'), url(https://fonts.gstatic.com/s/exo2/v3/Aj85fDXQrYnqAVDyNP57H_esZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Exo 2 Semi Bold'), local('Exo2-SemiBold'), url(https://fonts.gstatic.com/s/exo2/v3/hFqlepBer-IXtJK7U5poifesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
+}
+

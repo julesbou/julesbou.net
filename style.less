@@ -1,21 +1,24 @@
-html {
+html, body {
   height: 100%;
 }
 
 body {
-  font: 100% Monaco,Consolas,"Lucida Console",monospace;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  font-family: 'Exo 2', sans-serif;
   margin: 0;
-  color: #839496;
+  color: #777;
 }
 
 .root {
   overflow: hidden;
+  min-height: 100%;
 }
 
-.main {
+main {
   overflow: auto;
   width: 600px;
-  margin: 0 auto;
+  margin: 250px auto 0;
   margin-bottom: 40px;
 }
 
@@ -27,18 +30,15 @@ h1, h2, h3, p, ul, header, footer {
 }
 
 a, a:visited {
-  color: #4183C4;
+  color: #008cdd;
   text-decoration: none;
 }
 
 a:hover {
-  color: #4183C4;
+  color: #008cdd;
   text-decoration: underline;
 }
 
-img {
-  max-width: 100%;
-}
 
 @media (min-width: 701px) {
   .header {
@@ -53,92 +53,93 @@ img {
     font-size: 17px;
     margin-bottom: 85px;
 
-    .__rotated {
+    .header-rotated {
       transform: rotate(-16.4deg);
-      top: 100px;
+      top: 120px;
       right: e("calc(-100% + 610px)");
       right: e("-moz-calc(-100% + 610px)");
       right: e("-webkit-calc(-100% + 610px)");
       position: relative;
       width: 600px;
-      margin-bottom: 200px;
+      margin-bottom: 0;
       z-index: -1;
     }
   }
 
-  .header-geometry {
-    &.__header {
-      background: #ffb900;
-      width: 2750px;
-      height: 500px;
-      right: 0px;
-      top: -500px;
-      position: absolute;
-      display: inline-block;
-    }
-
-    &.__aside {
-      color: #303841;
-      width: 700px;
-      height: 2700px;
-      background: #002b36;
-      right: -700px;
-      top: 0px;
-      position: absolute;
-      z-index: -1;
-    }
-  }
-
-  .header h1 {
-    text-indent: -9999px;
-    height: 120px;
-    color: #4d9c96;
-    font-family: monospace;
+  .header-geometry-top {
+    background: #ffb900;
+    width: 2750px;
+    height: 500px;
+    right: 0;
+    top: -500px;
+    position: absolute;
     display: inline-block;
+  }
 
-    &:before {
-      cursor: default;
-      left: 20px;
-      line-height: 1em;
-      position: absolute;
-      text-indent: 0;
-      top: 1em;
-      white-space: pre;
-      margin-left: -200px;
-      content: "   _       _            _                              _              _   \A   (_)     | |          | |                            | |            | |  \A    _ _   _| | ___ ___  | |__   ___  _   _ ___ ___  ___| | _____ _   _| |_ \A   | | | | | |/ _ / __| |  _ \\ / _ \\| | | / __/ __|/ _ \\ |/ / _ \\ | | | __|\A   | | |_| | |  __/__ \\ | |_) | (_) | |_| \\__ /__ \\  __/   |  __/ |_| | |_ \A   | |\\__,_|_|________/ |____/ \\___/ \\__,_|___/___/\\___|_|\\_\\___|\\__, |___|\A  _/ |                                                             _/ |    \A |__/                                                             |___/    \A";
-    }
+  .header-geometry-right {
+    color: #303841;
+    width: 1000px;
+    height: 2700px;
+    background: #002b36;
+    right: -1000px;
+    top: 0px;
+    position: absolute;
+    z-index: -1;
   }
 }
 
-.home img {
+img {
   border-radius: 2px;
   float: right;
-  margin: 0 0 12px 12px;
+  margin: 0;
+  padding-left: 12px;
+  max-width: 25%;
 }
 
-.home p {
+p {
   margin: 0 0 12px 0;
+  word-spacing: 2px;
 }
 
-.home h2 {
+h2 {
   color: #c06a0b;
   margin-top: 24px;
+  font-style: italic;
+  font-size: 18px;
 }
 
 // clients list
-.home ul {
+ul {
   padding: 0;
+  max-width: 80%;
 
-  li {
-    display: inline-block;
-    list-style-type: none;
+  &.vertical {
+    li {
+      list-style-type: none;
 
-    &:not(:last-child):after {
-      content: '•';
+      &:before {
+        content: '•';
+      }
+
+      a {
+        margin-left: 8px;
+      }
     }
+  }
 
-    a {
-      margin-right: 8px;
+  &.horizontal {
+    li {
+      display: inline-block;
+      list-style-type: none;
+
+      &:not(:last-child):after {
+        content: '•';
+        margin-right: 4px;
+      }
+
+      a {
+        margin-right: 8px;
+      }
     }
   }
 }
@@ -146,10 +147,12 @@ img {
 @media (max-width: 700px) {
   body {
     padding: 20px;
+    box-sizing: border-box;
   }
 
-  .main {
+  main {
     width: 100%;
+    margin-top: 0;
 
     ul li {
       list-style-type: disc;
@@ -168,7 +171,9 @@ img {
     font-size: 150%;
   }
 
-  .header-geometry {
+  .header-geometry-top, .header-geometry-right {
     display: none;
   }
 }
+
+@import (inline) url(https://fonts.googleapis.com/css?family=Exo+2:500,600);
