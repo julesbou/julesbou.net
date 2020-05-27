@@ -178,7 +178,7 @@ article p {
   line-height: 30px;
   max-width: 100%;
   margin: 0 0 30px 0;
-  letter-spacing: 1px;
+  text-align: justify;
 }
 article hr {
   margin: 50px 10px;
