@@ -54,8 +54,7 @@ a:hover {
     margin-bottom: 85px;
   }
   .header .header-rotated {
-    -webkit-transform: rotate(-16.4deg);
-            transform: rotate(-16.4deg);
+    transform: rotate(-16.4deg);
     top: 120px;
     right: calc(-100% + 610px);
     right: -webkit-calc(-100% + 610px);
@@ -151,6 +150,11 @@ ul.horizontal li a {
   .header-geometry-top,
   .header-geometry-right {
     display: none;
+  }
+}
+@media (min-width: 701px) {
+  article {
+    padding: 0 20px;
   }
 }
 article {
