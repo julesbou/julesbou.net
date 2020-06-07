@@ -1,0 +1,66 @@
+
+.index {
+  @media (max-width: @mobile) {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  blockquote {
+    max-width: 400px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 20px 0;
+    font-size: 15px;
+  }
+
+  .picture-me {
+    @media (max-width: @mobile) {
+      width: 100px;
+    }
+  }
+
+  ul {
+    padding: 0;
+    max-width: 80%;
+
+    @media (max-width: @mobile) {
+      li {
+        list-style-type: disc;
+        display: block;
+
+        &:not(:last-child):after { content: ''; }
+      }
+    }
+
+    &.vertical {
+      li {
+        list-style-type: none;
+
+        &:before {
+          content: '-';
+        }
+
+        a {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    &.horizontal {
+      li {
+        display: inline-block;
+        list-style-type: none;
+
+        &:not(:last-child):after {
+          content: '•';
+          margin-right: 4px;
+        }
+
+        a {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
