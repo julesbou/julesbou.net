@@ -4,7 +4,7 @@
 
   <img src="moi.jpg" class="picture-me" alt="Jules Boussekeyt">
   <p>
-    Hello, my name is Jules Boussekeyt, I am doing JS/CSS/HTML consulting (60€/hour).
+    Hello, my name is Jules Boussekeyt, I am doing JavaScript/CSS/HTML consulting (60€/hour).
 
     <blockquote>
     I have keen interest in Javascript applications and beautiful user interfaces.
