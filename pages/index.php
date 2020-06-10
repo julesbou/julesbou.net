@@ -4,7 +4,7 @@
 
   <img src="moi.jpg" class="picture-me" alt="Jules Boussekeyt">
   <p>
-    Hello, my name is Jules Boussekeyt, I am doing JS/CSS/HTML consulting (60€/hour).
+    Hello, my name is Jules Boussekeyt, I am doing JavaScript/CSS/HTML consulting (60€/hour).
 
     <blockquote>
     I have keen interest in Javascript applications and beautiful user interfaces.
@@ -44,7 +44,7 @@
 
   <h2>writting</h2>
   <ul class="vertical">
-    <li><a href="/article-1.html">Empêcher que le monde se défasse</a> <small>(french)</small></li>
+    <li><a href="/article-1.html">Méthodologie de la morale</a> <small>(french)</small></li>
   </ul>
 
   <!--

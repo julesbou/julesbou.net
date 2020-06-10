@@ -170,7 +170,7 @@ h2 {
   width: 700px;
   max-width: 100%;
   margin: 0 auto 80px;
-  color: #333;
+  color: #444;
   line-height: 1.25;
 }
 @media (min-width: 701px) {
@@ -185,10 +185,9 @@ h2 {
 }
 .blog header h1 {
   font-weight: 700;
-  margin-bottom: 2px;
-  letter-spacing: 1px;
-  line-height: 1.2;
-  font-size: 36px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  font-size: 42px;
 }
 .blog header time {
   font-size: 14px;
