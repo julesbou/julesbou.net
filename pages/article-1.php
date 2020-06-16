@@ -13,7 +13,7 @@
   Un jour au Touquet je me suis battu.
   Enfin, je me suis plutôt défendu.
   Pour elle, je l’avais agressé en premier.
-  J’ai toujours pensé que si une femme frappe un homme, il a le droit de se défendre et la frapper en retour.
+  Si une femme frappe un homme, l'homme a-t-il le droit de se défendre et la frapper en retour?
   Comme l'homme a plus de force, doit-il frapper moins fort?
   Ou utiliser la même force?
   Et s’il frappe un peu plus fort parce qu'il se défend?
@@ -106,7 +106,7 @@
   <p>
   La compassion a un revers, trop, elle se transforme en cruauté.
   En 2008, les amis de mon père, de façon héroïque, ont permis, à qui le voulait, de racheter sa mauvaise conscience. 
-  Ils ont crées deux camps, ceux qui aiment les femmes et ceux qui les détruisent.
+  Ils ont créé deux camps, ceux qui aiment les femmes et ceux qui les détruisent.
   Tout le monde a choisi le premier camp et on m'a placé dans le second.
   Appartenir à un camp donne un semblant de privilège sur ceux dans l'autre.
   Tous les hommes sont égaux, mais certains sont meilleurs que d'autres.
@@ -198,19 +198,21 @@
   </p>
 
   <p>
-  Un an auparavant, à Nîmes, une dame m'avait invité à déjeuner et conseiller de prendre des notes.
+  Un an auparavant, à Nîmes, une dame m'avait invité à déjeuner et conseillé de prendre des notes.
   Depuis, j'en avais écrit plusieurs centaines, sur tout ce qui m'était arrivé.
-  La plupart de ces notes étaient rédigées en Français, mais certaines je les écrivais en Anglais, pour me détacher de leur contenu.
-  La police chargée de me surveiller a découvert ces notes que j'écrivais depuis plusieurs mois.
+  <!--La plupart de ces notes étaient écrites en Français, mais certaines étaient écrites en Anglais, pour me détacher de leur contenu.-->
+  La police chargée de me surveiller a découvert ces notes.
+  Ils les ont lues et ont décidé de m'aider, le temps que tout rentre dans l'ordre.
   Et l'Europe dans tout ça? L'Europe a oublié ce pour quoi elle avait été créée, trop occupé aujourd'hui à compter les billets.
   </p>
 
   <p>
   Je pense que dans le monde d'aujourd'hui, on choisit de réagir face à ce qui nous blesse de façon excessive. 
-  On réagit de façon excessive car on n'a pas trouvé le moyen de s'en protéger,
+  On réagit de façon excessive, car on n'a pas trouvé le moyen de se protéger,
   on n’a pas confiance en notre capacité à nous défendre, 
   on choisit de surréagir de peur d'être laissé pour compte. 
-  On ne peut pas être gagnant tout le temps, il faut savoir perdre, j'ai perdu.
+  On ne peut pas être gagnant tout le temps, il faut savoir perdre.
+  J'ai perdu.
   </p>
 
   <em>Jules BOUSSEKEYT</em>
