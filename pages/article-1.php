@@ -105,7 +105,7 @@
 
   <p>
   La compassion a un revers, trop, elle se transforme en cruauté.
-  En 2008, les amis de mon père, de façon héroïque, ont permis, à qui le voulait, de racheter sa mauvaise conscience. 
+  En 2008, les amis de mon père ont permis, à qui le voulait, de racheter sa mauvaise conscience. 
   Ils ont créé deux camps, ceux qui aiment les femmes et ceux qui les détruisent.
   Tout le monde a choisi le premier camp et on m'a placé dans le second.
   Appartenir à un camp donne un semblant de privilège sur ceux dans l'autre.
@@ -123,16 +123,14 @@
   </p>
 
   <p>
-  Pour le moment, rester vivre à Lille n'était plus possible, à cause du regard des gens.
-  Je leur ai donné un nom à ces regards, normalement on donne un nom aux choses qu'on chérit, il n'en est rien.
+  Pour le moment, rester vivre à Lille n'était pas possible, à cause de certains regards.
   "Regard névrotique": c'est comme ça que je les appelle.
   Je les appelle comme ça, car seule une personne névrotique peut vous offrir ce regard, mais ça n'a rien d'un cadeau.
   Ces gens-là, ils partent du constat que si leur vie est un échec, c'est la faute à leur environnement, 
   et cet environnement, c'est les personnes comme moi qui le détruise.
-  Toute remise en question par eux même est écartée, ce serait faire preuve de rationalité.
-  Ils ont l'impression qu'en me lançant un mauvais regard, le monde va s'améliorer.
+  Pour faire simple, je suis en partie responsable de leur malheur, 
+  toute remise en question par eux même est écartée, ce serait faire preuve de rationalité.
   Je ne suis pas responsable de leurs problèmes et encore moi du mal fait aux femmes, mais ça ils ne le comprendront jamais.
-  C'est une sorte d'automatisme pour eux, ils me voient, et ils voient la source de leur malheur.
   </p>
 
   <p>
