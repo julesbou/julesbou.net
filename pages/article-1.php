@@ -128,9 +128,8 @@
   Je les appelle comme ça, car seule une personne névrotique peut vous offrir ce regard, mais ça n'a rien d'un cadeau.
   Ces gens-là, ils partent du constat que si leur vie est un échec, c'est la faute à leur environnement, 
   et cet environnement, c'est les personnes comme moi qui le détruise.
-  Pour faire simple, je suis en partie responsable de leur malheur, 
-  toute remise en question par eux même est écartée, ce serait faire preuve de rationalité.
-  Je ne suis pas responsable de leurs problèmes et encore moi du mal fait aux femmes, mais ça ils ne le comprendront jamais.
+  C'est une sorte d'automatisme pour eux, ils me voient, et ils voient la source de leur malheur.
+  Toute remise en question par eux même est écartée, ce serait faire preuve de rationalité.
   </p>
 
   <p>
