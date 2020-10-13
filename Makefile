@@ -4,6 +4,8 @@ all:
 install:
 	npm install --global autoprefixer-cli
 	npm install --global less
+	npm install --global http-server
+	npm install --global watch
 
 serve:
 	http-server ./ -p 8082

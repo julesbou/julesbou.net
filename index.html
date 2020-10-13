@@ -3,7 +3,7 @@
   <head>
     <title>Jules BOUSSEKEYT</title>
 
-    <link rel="stylesheet" href="style.css?version=2">
+    <link rel="stylesheet" href="style.css?version=3">
     <link rel="shortcut icon" href="favicon.ico">
     <meta charset="utf-8">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -70,13 +70,13 @@
   </ul>
   -->
 
-  <!--
   <h2>projects</h2>
-  <ul class="vertical">
+  <ul class="horizontal">
+    <!--
     <li><a href="https://check-it.io">Check It</a></li>
-    <li><a href="https://julesbou.github.io/game-of-life/">Conway&#39;s game of life</a></li>
+    -->
+    <li><a href="https://julesbou.github.io/game-of-life/" data-action="transition-page">Conway&#39;s game of life</a></li>
   </ul>
-  -->
 
   <h2>elsewhere</h2>
   <ul class="horizontal">
@@ -96,6 +96,14 @@ window.onload = function() {
   liameEl.textContent = liame
   liameEl.href = 'mailto:' + liame
 }
+
+document.querySelector('[data-action="transition-page"]').addEventListener('click', function(event) {
+  event.preventDefault()
+  document.querySelector('.header').classList.add('transition')
+  setTimeout(function() {
+    window.location.href = event.target.href
+  }, 600)
+})
 </script>      
     </div>
   </body>
