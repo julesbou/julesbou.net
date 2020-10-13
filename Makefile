@@ -1,8 +1,9 @@
-.PHONY: pages
-
 all:
 	make css
-	make pages
+
+install:
+	npm install --global autoprefixer-cli
+	npm install --global less
 
 serve:
 	http-server ./ -p 8082
@@ -13,10 +14,3 @@ watch_css:
 
 css:
 	lessc styles/_main.less | autoprefixer-cli > style.css
-
-watch_pages:
-	make pages
-	watch "make pages" pages --wait=1
-
-pages:
-	php build.php
