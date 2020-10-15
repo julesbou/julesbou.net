@@ -75,7 +75,8 @@
     <!--
     <li><a href="https://check-it.io">Check It</a></li>
     -->
-    <li><a href="https://julesbou.github.io/game-of-life/" data-action="transition-page">Conway&#39;s game of life</a></li>
+    <li><a href="https://julesbou.github.io/game-of-life/" data-action="transition-page-right">Conway&#39;s game of life</a></li>
+    <li><a href="https://julesbou.github.io/css-animations/" data-action="transition-page-top">Relaxing CSS animations</a></li>
   </ul>
 
   <h2>elsewhere</h2>
@@ -89,21 +90,29 @@
 </main>
 
 <script>
-window.onload = function() {
-  var liame = ['jules', 'boussekeyt@gmail', 'com'].join('.')
-  var liameEl = document.querySelector('.liame')
+  window.onload = function() {
+    var liame = ['jules', 'boussekeyt@gmail', 'com'].join('.')
+    var liameEl = document.querySelector('.liame')
 
-  liameEl.textContent = liame
-  liameEl.href = 'mailto:' + liame
-}
+    liameEl.textContent = liame
+    liameEl.href = 'mailto:' + liame
+  }
 
-document.querySelector('[data-action="transition-page"]').addEventListener('click', function(event) {
-  event.preventDefault()
-  document.querySelector('.header').classList.add('transition')
-  setTimeout(function() {
-    window.location.href = event.target.href
-  }, 600)
-})
+  document.querySelector('[data-action="transition-page-right"]').addEventListener('click', function(event) {
+    event.preventDefault()
+    document.querySelector('.header').classList.add('transition-right')
+    setTimeout(function() {
+      window.location.href = event.target.href
+    }, 600)
+  })
+
+  document.querySelector('[data-action="transition-page-top"]').addEventListener('click', function(event) {
+    event.preventDefault()
+    document.querySelector('.header').classList.add('transition-top')
+    setTimeout(function() {
+      window.location.href = event.target.href
+    }, 800)
+  })
 </script>      
     </div>
   </body>
